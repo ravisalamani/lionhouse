@@ -18,6 +18,8 @@
 var AWS = require('aws-sdk');
 var uuid = require('node-uuid');
 
+AWS.config.loadFromPath('./config/aws.json');
+
 // Create an S3 client
 var s3 = new AWS.S3();
 
